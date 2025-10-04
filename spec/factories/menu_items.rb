@@ -1,7 +1,7 @@
 FactoryBot.define do
   factory :menu_item do
-    name { "MyString" }
-    price { "9.99" }
-    description { "MyString" }
+    name { Faker::Food.dish }
+    price { Faker::Number.decimal(l_digits: 2) }
+    description { Faker::Restaurant.description  }
   end
 end

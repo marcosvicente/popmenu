@@ -1,3 +1,5 @@
+require 'json'
+
 module Request
   module AuthHelpers
     def response_body(symbolize_keys: false)

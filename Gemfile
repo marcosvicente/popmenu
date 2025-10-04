@@ -54,6 +54,7 @@ group :development, :test do
   gem "shoulda-matchers", "~> 4.0"
   gem "database_cleaner"
   gem "timecop"
+  gem "simplecov", require: false
 
   # Omakase Ruby styling [https://github.com/rails/rubocop-rails-omakase/]
   gem "rubocop-rails-omakase", require: false
