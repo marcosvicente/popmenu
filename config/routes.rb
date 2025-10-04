@@ -9,5 +9,6 @@ Rails.application.routes.draw do
   # root "posts#index"
 
   resources :menus, only: %i[index ]
-  resources :menu_items, only: %i[index ]
+  resources :menu_items, only: %i[ index ]
+  resources :restaurants, only: %i[ index ]
 end
