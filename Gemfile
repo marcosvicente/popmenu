@@ -57,7 +57,7 @@ group :development, :test do
   gem "faker"
   gem "pry-rails", group: :development
   gem "rspec-rails", "~> 8.0.1"
-  gem "shoulda-matchers", "~> 4.0"
+  gem "shoulda-matchers", "~> 6.5"
   gem "database_cleaner"
   gem "timecop"
   gem "simplecov", require: false

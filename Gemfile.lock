@@ -309,8 +309,8 @@ GEM
       rubocop-rails (>= 2.30)
     ruby-progressbar (1.13.0)
     securerandom (0.4.1)
-    shoulda-matchers (4.5.1)
-      activesupport (>= 4.2.0)
+    shoulda-matchers (6.5.0)
+      activesupport (>= 5.2.0)
     sidekiq (7.0.9)
       concurrent-ruby (< 2)
       connection_pool (>= 2.3.0)
@@ -387,7 +387,7 @@ DEPENDENCIES
   rails (~> 8.0.2)
   rspec-rails (~> 8.0.1)
   rubocop-rails-omakase
-  shoulda-matchers (~> 4.0)
+  shoulda-matchers (~> 6.5)
   sidekiq (~> 7.0.3)
   simplecov
   solid_cable
