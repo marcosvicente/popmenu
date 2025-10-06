@@ -11,7 +11,7 @@ class Restaurant::ImportJsonDataService
 
   private
   def read_json_file
-    json_string = File.read(@file.path)
+    json_string = File.read(@file.pathmap)
   end
 
   def parse_json

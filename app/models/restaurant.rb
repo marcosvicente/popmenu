@@ -1,5 +1,5 @@
 class Restaurant < ApplicationRecord
-  has_many :menus, dependent: :destroy
+  belongs_to :menu
 
   has_one_attached :file
 end

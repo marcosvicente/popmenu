@@ -1,24 +1,64 @@
-# README
+# 📦 Project Name
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+> Short description of what your Rails app does.
 
-Things you may want to cover:
+## 🚀 Tech Stack
 
-* Ruby version
+- Ruby `2.7.1`
+- Rails `8.0.2`
+- Redis 
+- Sidekiq 
+- RSpec / Minitest for testing
 
-* System dependencies
+---
 
-* Configuration
+## 📂 Project Setup
 
-* Database creation
+### 📥 Requirements
 
-* Database initialization
+- Ruby `2.7.1`
+- Rails `8.0.2`
+- PostgreSQL
+- Node.js
+- Yarn
 
-* How to run the test suite
+### ⚙️ Installation
 
-* Services (job queues, cache servers, search engines, etc.)
+```bash
+# Clone the repository
+git clone https://github.com/yourusername/your-project.git
+cd your-project
 
-* Deployment instructions
+# Install dependencies
+bundle install
+yarn install
 
-* ...
+# Setup the database
+rails db:create db:migrate db:seed
+
+# Start the server
+rails server
+Visit: http://localhost:3000
+
+```
+
+
+# Run migrations
+``` bash 
+rails db:migrate
+```
+
+# Rollback
+```bash
+rails db:rollback
+```
+
+# Console
+```bash
+rails console
+```
+
+# Run server
+```bash
+rails s
+```
