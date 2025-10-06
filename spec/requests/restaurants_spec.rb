@@ -19,5 +19,22 @@ RSpec.describe "Restaurants", type: :request do
         expect(response_body["data"].size).to eq(5)
       end
     end
+
+    describe "POST /import_json_data" do
+      let!(:restaurant) { create_list(:restaurant, 10) }
+      let(:file) { fixture_file_upload('restaurant_data.json') }
+
+      context "success" do
+        it "should be return all menu" do
+          post "/restaurants/import_json_data", params: {
+            restaurant: {
+              file: file
+            }
+          }
+
+          expect(response).to have_http_status(:success)
+        end
+      end
+    end
   end
 end

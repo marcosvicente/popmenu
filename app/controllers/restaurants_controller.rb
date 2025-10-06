@@ -13,4 +13,19 @@ class RestaurantsController < ApplicationController
       }
     }
   end
+
+  def import_json_data
+    restaurant = ImportJsonJob.perform_now(restaurant_import_json_data_params[:file])
+    if restaurant.valid?
+      render json: restaurant, status: :created
+    else
+      render json: restaurant.errors, status: :unprocessable_entity
+    end
+
+  end
+
+  private
+  def restaurant_import_json_data_params
+    params.require(:restaurant).permit(:file)
+  end
 end

@@ -4,6 +4,7 @@ class CreateMenusMenuItems < ActiveRecord::Migration[8.0]
       t.references :menu, null: false, foreign_key: true
       t.references :menu_item, null: false, foreign_key: true
       t.decimal :total_price
+      t.integer :quantity
 
       t.timestamps
     end

@@ -7,8 +7,13 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "posts#index"
+  #
+  require 'sidekiq/web'
+  mount Sidekiq::Web => '/sidekiq'
 
   resources :menus, only: %i[index ]
   resources :menu_items, only: %i[ index ]
+
+  post 'restaurants/import_json_data'
   resources :restaurants, only: %i[ index ]
 end
