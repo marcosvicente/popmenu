@@ -41,7 +41,7 @@ gem "dotenv", groups: [ :development, :test ]
 gem "kaminari", "~> 1.2"
 
 # Queues
-gem 'sidekiq', '~> 7.0.3'
+gem 'sidekiq', '~> 8.0.9'
 
 gem 'active_model_serializers'
 
